@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  consumen-service:
+    #    platform: 'linux/amd64'
+    image: 'consumen-service:latest'
+    container_name: consumen-service
+    build:
+      context: ./consumen-service
+      dockerfile: Dockerfile
+    depends_on:
+      - user-db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://user-db:5432/user_db
+      - SPRING_DATASOURCE_USERNAME=user_db
+      - SPRING_DATASOURCE_PASSWORD=user_db
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create
+      - SERVER_PORT=8087
+    expose:
+      - "8087"
+    ports:
+      - "8087:8087"
+  user-db:
+    image: 'postgres:15-alpine'
+    container_name: user-db
+    environment:
+      - POSTGRES_USER=user_db
+      - POSTGRES_PASSWORD=user_db
+      - POSTGRES_DB=user_db
+    volumes:
+      - user_db:/var/lib/postgresql/data
+    ports:
+      - "5438:5432"
+volumes:
+  user_db:
