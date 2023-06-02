@@ -1,8 +1,5 @@
 # consumen-app
 
-This project is simple, you just need to make sure there is docker in your computer, type 'make start' in your terminal and server will run. 
-AWS deployment (need develop)
-
 This is a Java Spring Boot application that provides a RESTful API for managing consumen.
 
 Prerequisites
