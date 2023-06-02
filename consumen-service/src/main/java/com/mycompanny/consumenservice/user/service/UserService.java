@@ -1,5 +1,8 @@
-package com.mycompanny.consumenservice.user;
+package com.mycompanny.consumenservice.user.service;
 
+import com.mycompanny.consumenservice.user.UserNotFoundException;
+import com.mycompanny.consumenservice.user.entity.User;
+import com.mycompanny.consumenservice.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.mycompanny.consumenservice.user;
+package com.mycompanny.consumenservice.user.entity;
 
 
 import org.springframework.format.annotation.DateTimeFormat;
