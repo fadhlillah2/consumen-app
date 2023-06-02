@@ -6,6 +6,8 @@ This is a Java Spring Boot application that provides a RESTful API for managing 
 - Java 11
 - Spring Boot 2.7.4
 - postgresql 14
+- thymeleaf
+- bootstrap 4.3.1
 ### Installation
 To run the project, follow these steps:
 
@@ -26,12 +28,12 @@ enabled: Determine is enable or not
 ### API Endpoints
 The following API endpoints are available:
 
-GET /users: Returns a list of all users
-GET /users/getByName: Returns the movie with the specified regex name
-GET /users/new: show new form when add user
-POST /users/save: Creates a new user
-GET users/edit/{id}: Updates the user with the specified ID
-DELETE users/delete/{id}: Deletes the user with the specified ID
+- GET /users: Returns a list of all users
+- GET /users/getByName: Returns the movie with the specified regex name
+- GET /users/new: show new form when add user
+- POST /users/save: Creates a new user
+- GET users/edit/{id}: Updates the user with the specified ID
+- DELETE users/delete/{id}: Deletes the user with the specified ID
 ### Authentication and Authorization
 This application does not require authentication or authorization to access the API endpoints.
 
