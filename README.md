@@ -18,13 +18,13 @@ Run the project using ./mvnw spring-boot:run
 ### Data Model
 The data model for this CRUD application consists of a single entity: konsumen. The Movie entity has the following properties:
 
-id: The unique identifier for the movie
-name: The name of the user/consumen
-alamat: The address of the user/consumen
-kota: The city of the user/consumen
-provinsi: The province of the user/consumen
-tgl_registrasi: The date and time when the movie was created
-enabled: Determine is enable or not
+- id: The unique identifier for the movie
+- name: The name of the user/consumen
+- alamat: The address of the user/consumen
+- kota: The city of the user/consumen
+- provinsi: The province of the user/consumen
+- tgl_registrasi: The date and time when the movie was created
+- enabled: Determine is enable or not
 ### API Endpoints
 The following API endpoints are available:
 
