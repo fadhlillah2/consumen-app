@@ -1,1 +1,6 @@
-localhost:8080/a
+GET http://localhost:8080/users
+Accept: application/json
+
+###
+localhost:8080/
+
